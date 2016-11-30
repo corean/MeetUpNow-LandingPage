@@ -2,3 +2,5 @@
 /tmp
 *.bak
 *.bloc
+/__css
+/__js

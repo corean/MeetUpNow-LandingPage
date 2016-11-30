@@ -12,16 +12,12 @@ body {
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    font-family: 'Noto Sans KR', sans-serif;
+   height: 100%;
 }
 
 a:hover {
    text-decoration: none;
    cursor: pointer;
-}
-
-a,
-button {
-   outline: none!important;
 }
 
 
@@ -171,151 +167,6 @@ button {
 
 #hero h2 {
    font-weight: 400;
-}
-
-
-/* = NavBar
--------------------------------------------------------------- */
-
-.navbar {
-   margin-bottom: 0;
-   z-index: 1;
-}
-
-.navbar-brand {
-   height: auto;
-   padding: 15px 15px;
-   font-size: 25px;
-   font-weight: normal;
-   font-weight: 600;
-}
-
-.navbar-brand img {
-   max-height: 200px;
-   margin: 0 5px 0 0;
-   display: inline;
-}
-
-.navbar-brand {
-   padding: 15px 15px;
-}
-
-.navbar .nav {
-   padding-top: 2px;
-   margin-right: -16px;
-   float: right;
-   z-index: 1;
-}
-
-.nav>li {
-   float: left;
-   margin-top: 4px;
-   font-size: 16px;
-}
-
-.navbar-nav .open .dropdown-menu>li>a {
-   text-align: inherit;
-}
-
-.nav>li a:hover,
-.nav>li a:focus {
-   background: transparent;
-}
-
-.navbar-toggle {
-   margin: 10px 10px 0 0;
-   border: 0px;
-}
-
-.navbar-toggle:hover {
-   background: transparent!important;
-}
-
-.navbar-toggle .icon-bar {
-   background-color: rgba(0, 0, 0, .5);
-   width: 26px;
-}
-
-
-/* Inverted navbar */
-
-.nav-invert .navbar .nav {
-   float: left;
-}
-
-.nav-invert .navbar-header,
-.nav-invert .navbar-brand {
-   float: right;
-}
-
-@media (min-width: 768px) {
-   .site-navigation {
-      position: absolute;
-      top: 50%;
-      right: 20px;
-      transform: translate(0, -50%);
-      -webkit-transform: translateY(-50%);
-   }
-   .nav>li .dropdown-menu a,
-   .nav>li .dropdown-menu a:hover {
-      color: #484848;
-   }
-   .nav-invert .site-navigation {
-      left: 20px;
-      right: 0;
-   }
-   .nav-center {
-      text-align: center;
-   }
-   .nav-center .navbar-header {
-      width: 100%;
-   }
-   .nav-center .navbar-header,
-   .nav-center .navbar-brand,
-   .nav-center .nav>li {
-      float: none;
-      display: inline-block;
-   }
-   .nav-center .site-navigation {
-      position: relative;
-      width: 100%;
-      margin-top: 20px;
-   }
-}
-
-.nav>li>.dropdown a {
-   background: none!important;
-   display: block;
-   padding: 14px 15px;
-}
-
-nav .caret {
-   margin: 0 5px;
-}
-
-
-/* Dropdown Menus SubMenu */
-
-.dropdown-menu .dropdown-menu {
-   top: -8px;
-   left: 100%;
-}
-
-.dropdown-menu .dropmenu-flow-right {
-   top: 100%;
-   left: 0;
-   margin-left: -1px;
-   border-top-left-radius: 0;
-   border-top-right-radius: 0;
-}
-
-.dropdown-menu .dropdown span {
-   border: 4px solid black;
-   border-top-color: transparent;
-   border-right-color: transparent;
-   border-bottom-color: transparent;
-   margin: 6px -5px 0 0!important;
-   float: right;
 }
 
 
@@ -616,6 +467,79 @@ iframe {
    background-image: url("/img/bg_3_friends.jpg");
 }
 
+.line-break {
+   word-spacing: normal;
+   word-break: keep-all;
+}
+
+#process span {
+   display: inline-block;
+   border-radius: 500px;
+   box-shadow: 0px 0px 2px #888;
+}
+
+#process .icon-round {
+   border-color: rgba(0, 0, 0, 0.1);
+}
+
+#process .icon-md {
+   color: white;
+   background-color: #666;
+}
+
+
+/* Footer */
+
+footer {
+   background-color: #3d3d3d;
+   padding: 100px 0;
+   font-size: 16px;
+   color: white;
+}
+
+footer a {
+   color: white;
+   -webkit-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+
+footer a:hover {
+   color: #ababab;
+   text-decoration: none;
+}
+
+footer .nav {
+   margin: 0 0 30px 0;
+}
+
+footer .nav li {
+   padding-right: 5px;
+}
+
+footer .list-inline-item:not(:last-child) {
+   margin-right: 30px;
+}
+
+.parallax1 {
+   height: 100%;
+   background-image: url('/img/bg_3_friends.jpg');
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.parallax2 {
+   height: 700px;
+   background-image: url('/img/bg_people.jpg');
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
 
 /* = Mobile adjustments
 -------------------------------------------------------------- */
@@ -631,15 +555,6 @@ iframe {
    .bloc-tile-4.full-width-bloc .container {
       padding-left: 0;
       padding-right: 0;
-   }
-}
-
-@media (max-width: 992px) and (min-width: 768px) {
-   .navbar .nav {
-      max-width: 80%
-   }
-   .nav-center.navbar .nav {
-      max-width: 100%
    }
 }
 
@@ -725,19 +640,6 @@ iframe {
       transform: none;
       -webkit-transform: none;
       -ms-transform: none;
-   }
-
-   .nav>li {
-      margin-top: 0;
-      border-bottom: 1px solid rgba(0, 0, 0, .1);
-      background: rgba(0, 0, 0, .05);
-      text-align: left;
-      padding-left: 15px;
-      width: 100%;
-   }
-
-   .nav>li:hover {
-      background: rgba(0, 0, 0, .08);
    }
 
    .dropdown .dropdown a .caret {
@@ -845,7 +747,7 @@ iframe {
    }
 
    .blocsapp-device-iphone5 {
-      background-size: 216px 425px;
+      background-size: 2126px 425px;
       padding-top: 60px;
       width: 216px;
       height: 425px;
@@ -896,6 +798,10 @@ iframe {
       margin-left: auto;
       margin-right: auto;
    }
+
+   .text-md-right {
+      text-align: right!important;
+   }
 }
 @media (max-width: 420px) {
    .hero-text-vc {
@@ -924,8 +830,12 @@ iframe {
    .bloc-mob-center-text {
       text-align: center;
    }
-}
-.line-break {
-   word-spacing: normal;
-   word-break: keep-all;
+
+   .parallax2 {
+      height: 300px;
+   }
+
+   footer {
+      padding: 30px 0 20px 0;
+   }
 }

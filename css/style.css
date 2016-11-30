@@ -374,7 +374,7 @@ iframe {
 }
 
 .blocsapp-device-iphone6.iphone6-space-grey {
-   background-image: url("/img/Apple-iPhone-6s-Space-Gray.png");
+   background-image: url("../img/Apple-iPhone-6s-Space-Gray.png");
 }
 
 
@@ -522,7 +522,7 @@ footer .list-inline-item:not(:last-child) {
 
 .parallax1 {
    height: 100%;
-   background-image: url('/img/bg_3_friends.jpg');
+   background-image: url('../img/bg_3_friends.jpg');
    /* Create the parallax scrolling effect */
    background-attachment: fixed;
    background-position: center;
@@ -532,7 +532,7 @@ footer .list-inline-item:not(:last-child) {
 
 .parallax2 {
    height: 700px;
-   background-image: url('/img/bg_people.jpg');
+   background-image: url('../img/bg_people.jpg');
    /* Create the parallax scrolling effect */
    background-attachment: fixed;
    background-position: center;
